@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-for file in "./data"/*.sql; do
+for file in "./models"/*.sql; do
     psql -f "${file}" > ${file%.sql}.txt
 done
